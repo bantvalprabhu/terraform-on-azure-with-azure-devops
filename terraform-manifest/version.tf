@@ -20,5 +20,3 @@ provider "azurerm" {
 
   }
 }
-
-#  this is version file !
