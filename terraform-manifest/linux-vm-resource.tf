@@ -24,7 +24,7 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
   location              = azurerm_resource_group.rg.location
   size                  = var.vm_size
   network_interface_ids = [azurerm_network_interface.linux_vm_nic.id]
-  admin_username = var.var.admin_user
+  admin_username = var.admin_user
   admin_ssh_key {
     username   = var.admin_user
     public_key = file("${path.module}/ssh-keys/terraform-azure.pub")
